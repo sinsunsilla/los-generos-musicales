@@ -69,7 +69,7 @@
   <string role="key" value="_intendedEndUserRoleType"></string>
   <unicode value="learner"></unicode>
   <string role="key" value="_isChanged"></string>
-  <bool value="0"></bool>
+  <bool value="1"></bool>
   <string role="key" value="_isTemplate"></string>
   <bool value="0"></bool>
   <string role="key" value="_lang"></string>
@@ -94,13 +94,13 @@
    <instance class="exe.engine.node.Node" reference="4">
     <dictionary>
      <string role="key" value="_title"></string>
-     <unicode value="Los géneros musicales contemporáneos"></unicode>
+     <unicode value="Los géneros musicales actuales"></unicode>
      <string role="key" value="idevices"></string>
      <list>
       <instance class="exe.engine.jsidevice.JsIdevice" reference="1">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="Los géneros musicales contemporáneos"></unicode>
+        <unicode value="INTRODUCCIÓN"></unicode>
         <string role="key" value="_attributes"></string>
         <list>
          <tuple>
@@ -297,7 +297,7 @@
      <string role="key" value="exportType"></string>
      <string value="website"></string>
      <string role="key" value="last_full_node_path"></string>
-     <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos"></string>
+     <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales"></string>
      <string role="key" value="parent"></string>
      <none></none>
      <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -818,7 +818,7 @@
         <string role="key" value="exportType"></string>
         <string value="website"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos:Gu%C3%ADa%20Did%C3%A1ctica"></string>
+        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales:Gu%C3%ADa%20Did%C3%A1ctica"></string>
         <string role="key" value="parent"></string>
         <reference key="4"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -1213,7 +1213,7 @@
         <string role="key" value="exportType"></string>
         <string value="website"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos:Creamos%20un%20libro%20digital"></string>
+        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales:Creamos%20un%20libro%20digital"></string>
         <string role="key" value="parent"></string>
         <reference key="4"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -1485,7 +1485,7 @@
            <string role="key" value="exportType"></string>
            <string value="website"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos:Creamos%20un%20libro%20digital:Tarea%201%3A%20Investigaci%C3%B3n"></string>
+           <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales:Creamos%20un%20libro%20digital:Tarea%201%3A%20Investigaci%C3%B3n"></string>
            <string role="key" value="parent"></string>
            <reference key="15"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -2074,7 +2074,7 @@
            <string role="key" value="exportType"></string>
            <string value="website"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos:Creamos%20un%20libro%20digital:Tarea%202%3A%20Portfolio%20"></string>
+           <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales:Creamos%20un%20libro%20digital:Tarea%202%3A%20Portfolio%20"></string>
            <string role="key" value="parent"></string>
            <reference key="15"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -2469,7 +2469,7 @@
            <string role="key" value="exportType"></string>
            <string value="website"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos:Creamos%20un%20libro%20digital:Tarea%203%3A%20Composici%C3%B3n"></string>
+           <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales:Creamos%20un%20libro%20digital:Tarea%203%3A%20Composici%C3%B3n"></string>
            <string role="key" value="parent"></string>
            <reference key="15"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -2687,7 +2687,7 @@
         <string role="key" value="exportType"></string>
         <string value="website"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos:Evaluaci%C3%B3n"></string>
+        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales:Evaluaci%C3%B3n"></string>
         <string role="key" value="parent"></string>
         <reference key="4"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -2986,7 +2986,7 @@
         <string role="key" value="exportType"></string>
         <string value="website"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20contempor%C3%A1neos:Cr%C3%A9ditos"></string>
+        <string value="exe-node:Los%20g%C3%A9neros%20musicales%20actuales:Cr%C3%A9ditos"></string>
         <string role="key" value="parent"></string>
         <reference key="4"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
