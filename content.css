@@ -1,332 +1,232 @@
-/*  =================================================
-/*  =================================================
-/*  =================================================
-     Fichero:content.css
-     Proyecto:INTERBAC- Nueva plantilla para exeLearning
-     Autor:Juan Diego Pérez Jiménez / Anibal de la Torre
-     Fecha:Febrero 2009
-     Descripcion:Hoja de estilos principal
-     Company:  Servicio de Educación Permanente.
-                Consejería de Educación
-                Junta de Andalucía     
-   ================================================== */
-/* Estilo general del cuerpo de los contenidos */
-body, html  {
-  	background-color:#ffffff;
-	color:#000000;
-	font-size:small;
-	text-align:justify;
-	line-height:120%;
-	height:100%;
+/* eXeLearning Style Designer Compatible Style */
+/* vietnamese */
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Encode Sans Light'), local('EncodeSans-Light'), url(EncodeSans-Light_vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
-body,.feedback {font-family:Verdana,Arial, Helvetica, sans-serif}
-p {
-	margin:.7em 0;
+/* latin-ext */
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Encode Sans Light'), local('EncodeSans-Light'), url(EncodeSans-Light_latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-blockquote {
-	margin:12px 40px 12px 40px;
+/* latin */
+@font-face {
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Encode Sans Light'), local('EncodeSans-Light'), url(EncodeSans-Light_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-a:link,
-a:active,
-a:visited {
-	color:#2d4784;
-	text-decoration:none;
-}
-a:hover {
-	color:#2d47854;
-	text-decoration:underline;
-}
-img {
-	margin:0 5px -3px 0;    
-}
-a img
-{
-	border:0;
-	margin:0;	
-}
-table {
-	margin:10px;
-	border:1px solid;
-	border-color:inherit;
-	border-collapse:collapse;
-	padding:3px;
-}
-table[align="center"]
-{
-	margin-left:auto;
-	margin-right:auto;
-}
-td {
-	border:1px solid;
-	border-color:inherit;
-	border-collapse:collapse;
-	padding:3px;
-}
-.exe-table-minimalist{
-	border:0;
-}
-.exe-table-minimalist td{
-	border-width:0 0 1px 0;
-}
-/* PARA QUE AL EXPORTAR SE QUITEN LOS BORDES DE LAS PREGUNTAS */
-.question table {
-	border:0;
-}
-.question td {
-	border:0;
-}
+html{font-size:105%}
+body{font:105%/1.5 "Encode Sans",Arial,Helvetica,sans-serif;padding:15px;margin:0;text-align:left}
 
-ol,ul {
-	margin-left:2em;	
-}
-ul li {
-	list-style-image:url(bullet.gif);
-	list-style-position:outside;
-}
-#nodeDecoration {
-	text-align:left;
-}
-.nodeDecoration {
-	text-indent:5px;
-}
-h1#nodeTitle {
-	background:#627796 url(gaviotas3.gif) no-repeat right 50%;
-	color:#FFFFFF;
-	font-weight:bold;
-    display:block;
-	font-size:20px;
-	line-height:25px;
-	border-top:3px double #CCCCCC;
-	border-bottom:3px double #CCCCCC;
-	padding:1px 70px 3px 0;
-    margin-top:0;
-}
-.nodeTitle {
-	background:#627796 url(gaviotas3.gif) no-repeat right 50%;
-	color:#FFFFFF;
-	font-weight:bold;
-    display:block;
-	font-size:20px;
-	line-height:25px;
-	border-top:3px double #CCCCCC;
-	border-bottom:3px double #CCCCCC;
-	padding:1px 70px 3px 0;
-    margin-top:0;
-}
-/* Cabecera para cuando exportemos a web sola para imprimir */
-#header  {
-    text-align:left;
-    height:5px;
-    padding-left:20px;
-    font-size:2.2em;
-    font-weight:bold;
-}
+h2{font-size:1.3em}
+h3{font-size:1.2em}
+h4{font-size:1.1em}
+h5{font-size:1em}
+p{margin:1em 0}
+.score.js-feedback{margin-bottom:1em}
+
+#header,#emptyHeader,#nodeDecoration{padding:0 20px;height:auto!important;height:120px;min-height:120px;font-size:1.6em;font-weight:300;border-style:1px;border-width:1px}
+#headerContent{padding-top:70px}
+#header h1,#nodeDecoration h1{margin:-.5em 0 1em 0;font-size:1em;text-align:left}
+#nodeDecoration{margin-bottom:15px} /* Single page */
+
+.nodeDecoration h1{font-size:1.5em}
 
 /* iDevices */
-.iDeviceTitle{top:0;font-size:1.5em}
-span.iDeviceTitle{height:48px;display:block}
-.iDevice_header{background-position:0 0}
+.iDevice{margin:20px 0}
+.iDevice_header{letter-spacing:.5px;padding:.5em 40px .5em 0;height:auto!important;height:1.7em;min-height:1.7em;position:relative}
+.iDevice_header[style]{background-image:none!important}
+.iDeviceTitle{font-size:1.3em;vertical-align:bottom;top:auto;display:inline-block;font-weight:300;
+padding:5px 10px 5px 43px;background-repeat:no-repeat;background-position:0 50%;margin:0}
+.iDevice_header_noIcon .iDeviceTitle{background-image:none;padding-left:20px}
+.iDeviceTitle{*display:inline;*line-height:2em}/* IE6, IE7 */
+.iDevice_inner{padding:10px 20px;border-width:1px;border-style:solid}
 
-/* SCORM y otros comparten apariencia:esta es la apariencia por defecto */
-.emphasis1 .iDevice_header{
-    background:url(icon_question.gif) no-repeat 18px 0;
-    padding:5px 25px 5px 73px;
-    color:#6CA7E1
-}
-.iDevice.emphasis1{
-    color:#000;
-    background:#F4FAFF url(fondoev.gif) repeat-y 0 0;
-    margin:15px 0 25px 0;
-    border:1px solid #ABCCEE;
-    color:#000080
-}
-.emphasis1 .iDevice_content_wrapper{
-    padding:0 25px 10px 40px;
-}
-
+/* Clearfix */
 .iDevice_content{overflow:auto}
+.FileAttachIdeviceInc .iDevice_content{margin-bottom:-.5em}
 
-/* Actividad */
-.activityIdevice .iDevice_header{
-    background-image:url(icon_activity.gif);
-    color:#00007D;
-}
-.activityIdevice .iDevice{
-    background:#ECECFF url(fondoev_activity.gif) repeat-y 0 0;
-    border-color:#9797FF;
-    color:#350094;
-}
+/* Hide/Show iDevice */
+.toggle-idevice{display:block;margin:0;text-align:right;height:16px}
+.toggle-idevice a{display:block;width:16px;height:16px;background:url(_style_icons.png) no-repeat -50px -50px;outline:none;position:absolute;top:0;right:0;z-index:100;border-bottom-left-radius:1px}
+.toggle-idevice .show-idevice{background-position:0 -50px}
+.toggle-idevice span{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
+.toggle-idevice a:hover,.toggle-idevice a:focus{filter:alpha(opacity=100);opacity:1}
+/* em */
+.iDevice_header .toggle-idevice{position:absolute;top:14px;right:14px}
+/* No em */
+.toggle-em0{position:relative;top:0;right:15px;margin-bottom:-21px}
+.toggle-em0 + .iDevice .iDevice_content p:first-child{padding-right:50px} /* To review */
+.hidden-idevice .toggle-em0{margin-bottom:0}
 
-/* Actividad de lectura */
-.readingIdevice .iDevice_header{
-    background-image:url(icon_reading.gif);
-    color:#494441;
-}
-.readingIdevice .iDevice,
-.CasestudyIdevice .iDevice {
-    background:#FCFCFC url(fondoev_bn.gif) repeat-y 0 0;
-    border-color:#000;
-    color:#4E4E4E;
-}
+/* iDevice title with background-color */
+input.feedbackbutton{margin:0}
+.iDevice.emphasis1{box-shadow:rgba(0, 0, 0, 0.25) 3px 3px 4px}
+.iDevice_header{border-width:1px;border-style:solid;padding-left:13px}
+.iDevice_inner{border-top:0}
 
-/* Conocimiento previo */
-.preknowledgeIdevice .iDevice_header{
-    background-image:url(icon_preknowledge.gif);
-    color:#008E34;
-}
-.preknowledgeIdevice .iDevice{
-    background:#EEFFE7 url(fondoev_preknowledge.gif) repeat-y 0 0;
-    border-color:#00532F;
-    color:#008E34;
-}
+.ExternalUrlIdevice iframe{border:0}
 
-/* Objetivos */
-.objectivesIdevice .iDevice_header{
-    background-image:url(icon_objectives.gif);
-    color:#B96A00;
-}
-.objectivesIdevice .iDevice{
-    background:#FFF5E8 url(fondoev_objectives.gif) repeat-y 0 0;
-    border-color:#FF9900;
-    color:#B96A00;
-}
-
-/* Caso práctico */
-.CasestudyIdevice .iDevice_header{
-    background-image:url(icon_casestudy.gif);
-    color:#494441;
-}
-
-/* Galería */
-.GalleryIdevice .iDevice_header{
-    background-image:url(icon_gallery.gif);
-    color:#494441;
-}
-.customIdevice .iDevice_header{
-    color:#494441;
-}
-.GalleryIdevice .iDevice,
-.customIdevice .iDevice{
-    background:#fff;
-    border-color:#fff;
-    color:#333;
-    margin:8px 10px 0 0;
-}
-
-/* Retroalimentaciones */
-.feedback {
-	border:1px dashed #4E4E4E;
-	color:#4E4E4E;
-	background-color:#FFFFFF;
-	padding:5px;
-	margin:5px;
-	font-size:1em;	
-	height:auto !important;
-	*height:auto !important;
-	*height:0px;
-	margin-bottom:5px;
-	overflow-y:auto;
-}
-
-/* Cita con autoría */
+/* Reset base.css */
+.block,.feedback{padding:0}
+.feedback{font-family:inherit;font-size:1em}
+li{list-style-position:outside}
 .styled-qc{margin-top:2.5em}
-.styled-qc:before{top:0}
+.exe-dl .icon,.exe-dl-toggler a{width:24px;height:24px;border-radius:12px}
+.exe-dl-toggler a{line-height:22px}
+.js .exe-dl dd{margin-left:44px}
+.exe-enlarge-icon b{font-size:1.2em}
+.pre-code{border-radius:0}
 
-/* Formularios y botones */
-input {
-	font-weight:bold;
-	color:inherit;
-	border-color:inherit;
-	border-style:solid;
-	border-width:1px;
-}
-select {
-	font-weight:bold;
-	color:inherit;
-	border-color:inherit;
-	border-style:solid;
-	border-width:1px;
-}
+/* Forms */
+input,select{font-size:1em;font-family:inherit}
+.iDevice_hint_title a{padding-left:25px}
+.iDevice_buttons input{font-size:1em;margin-right:.5em;padding:.15em .45em}
+.MultichoiceIdevice .feedback p:first-child{margin-top:0}
+.MultichoiceIdevice .activity-form,.MultiSelectIdevice .activity-form{margin-bottom:1em}
+.TrueFalseIdevice .activity-form{margin-top:1.5em}
+.TrueFalseIdevice .activity-form:first-child{margin-top:0}
+.TrueFalseIdevice label{margin:0 1em}
+.MultichoiceIdevice input[type=radio],.MultiSelectIdevice input[type=checkbox],.QuizTestIdevice input[type=radio]{width:16px;height:16px;margin:5px 0 0 12px}
+.custom-inputs .iDevice_answer-field{width:40px}
+.custom-inputs  .iDevice_answer-content,.custom-inputs  .iDevice_answer-feedback{padding-left:55px}
+.custom-inputs  .iDevice_answer-content{padding-top:4px}
+.styledRadio,.styledCheckbox{margin-left:12px}
+.MultichoiceIdevice .feedback{margin-top:1em}
+.right-option,.wrong-option{font-style:italic}
+.readingIdevice .iDevice_content:first-child p:last-child,
+.CasestudyIdevice .iDevice_content:first-child p:last-child{margin-bottom:0}
+.readingIdevice .feedbackbutton,
+.CasestudyIdevice .feedbackbutton,
+.ReflectionIdevice .feedbackbutton{margin:.5em 0 1em 0}
+.TrueFalseIdevice .exe-radio-option.styledRadio{display:inline-block;vertical-align:middle;margin:-2px 5px 0 0}
 
-/* Sugerencias y ayudas pedagógicas */
-.popupDiv {
-	background-color:#fff;
-	border:2px solid #607489;
-	padding:4px;
-	margin-left:15px;
-	text-align:left;
-}
-.popupDivLabel {
-	text-align:center;
-	font:message-box;
-	font-weight:bold;
-	color:#fff;
-	margin:4px;
-	background-color:#f00;
-}
-
-/* IDEVICE IMAGEN AMPLIADA */
-.image_text {
-	padding-left:20px;
-	padding-top:10px;
-	padding-right:10px;
-	padding-bottom:10px;
-	color:#4E4E4E;
-	background-image:url(fondoev_bn.gif);
-	background-position:left top;
-	background-repeat:repeat-y;
-	background-color:#FCFCFC;
-	border:1px solid #000000;
-}
-.image_text .image {
-	background-image:url(icon_zoom.gif);
-	background-position:left top;
-	background-repeat:no-repeat;
-}
-.image object {
-	margin:0;
-	padding:0;
-	margin-top:55px;	
-}
-.image_text + .block {
-	float:left;
-	margin:5px;
-	margin-right:-15px;
-	color:#4E4E4E;
-}
+/* Licenses */
+#packageLicense{margin:2.5em 0 1.5em 0;text-align:left;line-height:1.2em;font-size:.9em}
+#packageLicense.cc{padding-left:95px;background:url(_style_licenses.png) no-repeat 0 0}
+#packageLicense.cc-by-sa{background-position:0 -100px}
+#packageLicense.cc-by-nd{background-position:0 -200px}
+#packageLicense.cc-by-nc{background-position:0 -300px}
+#packageLicense.cc-by-nc-sa{background-position:0 -400px}
+#packageLicense.cc-by-nc-nd{background-position:0 -500px}
+#packageLicense.cc-0{background-position:0 -600px}
+#siteFooter{padding:20px}
 
 /* Download package iDevice */
-.download-packageIdevice .exe-download-package-link a{
-	background:#627796
+.download-packageIdevice .exe-download-package-link a{background:#333}
+
+/* Lightbox */
+.lightboxOverlay{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=95);opacity:0.95}
+#lightbox .lb-caption{font-size:1em}
+
+/* Effects - iDevices with emphasis */
+.emphasis1 .exe-fx .fx-C2,
+.emphasis1 .exe-fx .fx-C2 a,
+.emphasis1 .fx-pagination a{
+background:#ededed;
 }
 
-/* IDEVICE SITIO EXTERNO SITIO WEB */
-iframe {
-	border:1px solid #000;
-	padding:2px;
+@media print {
+    div.node{page-break-after:auto} /* base.css */
+    .iDevice{margin-bottom:20px}
+	html body{background:#fff;color:#000;font-size:11pt}
+	@page{margin:1.5cm}
+	a[href^=http]{font-weight:bold;text-decoration:none!important}
+	a[href^=http]:after{content:" <" attr(href) "> "}
+	#main .iDeviceTitle{background:none;padding-left:0}
+	.iDevice.emphasis1{box-shadow:none}
+	body #header,body #emptyHeader,body #nodeDecoration{height:auto!important;min-height:0;border:none;padding:0}
+	#packageLicense.cc{padding-left:0}
+	.toggle-idevice{display:none}	
 }
 
-.pre-code {
- 	background:#112C4C;
-	color:#E7ECF1;
-	font-family:Monaco, Courier, monospace;
-	font-size:12px;
-	overflow:auto;
-	padding:20px;
-	border-radius:9px;
+/* eXeLearning Style Designer */
+.iDevice_header{
+/*emTitleColor*/
+color:#0d528a;
+/*emTitleBGColor*/
+background-color:#f5f7f8;border-color:#f5f7f8;
 }
-
-/* base.css */
-.js .exe-dl dd{margin-left:35px}
-
-/* ESTILOS PARA IMPRIMIR */
-img {
-	page-break-inside:avoid;
+.iDevice_inner{
+/*emBGColor*/
+background-color:#f5f7f8;border-color:/*emBorderColor*/
+#f5f7f8;
 }
-
-/* Efectos */
-.exe-fx .fx-C2,
-.exe-fx .fx-C2 a,
-.fx-pagination a{
-background:#F3F3F3;
+.iDeviceTitle{
+background-image:url(icon_star.png);
+}
+.activityIdevice .iDeviceTitle{
+background-image:url(icon_assignment.png);
+}
+.readingIdevice .iDeviceTitle{
+background-image:url(icon_unread.png);
+}
+.FileAttachIdeviceInc .iDeviceTitle{
+background-image:url(icon_download.png);
+}
+.WikipediaIdevice .iDeviceTitle{
+background-image:url(icon_description.png);
+}
+.ListaIdevice .iDeviceTitle,.QuizTestIdevice .iDeviceTitle,.MultichoiceIdevice .iDeviceTitle,.TrueFalseIdevice .iDeviceTitle,.MultiSelectIdevice .iDeviceTitle,.ClozeIdevice .iDeviceTitle{
+background-image:url(icon_question.png);
+}
+.preknowledgeIdevice .iDeviceTitle{
+background-image:url(icon_announcement.png);
+}
+.GalleryIdevice .iDeviceTitle{
+background-image:url(icon_media.png);
+}
+.objectivesIdevice .iDeviceTitle{
+background-image:url(icon_info.png);
+}
+.ReflectionIdevice .iDeviceTitle{
+background-image:url(icon_account.png);
+}
+body{
+/*bodyColor*/
+color:#333333;
+/*fontSize*/
+font-size:95%;
+/*contentBGColor*/
+background-color:#ffffff;
+}
+a{
+/*aColor*/
+color:#2495ff;
+}
+#header,#emptyHeader,#nodeDecoration{
+height:auto!important;
+/*headerHeight*/
+height:100px;min-height:100px;
+/*headerBGColor*/
+background-color:#2980b9;border:1px solid /*headerBorderColor*/
+#e1e4e5;
+}
+#headerContent{
+/*headerTitleTopMargin*/
+padding-top:65px;
+/*headerTitleColor*/
+color:#ffffff;
+}
+#siteFooter{
+border:1px solid /*footerBorderColor*/
+#e1e4e5;
+/*footerColor*/
+color:#ffffff;
+/*footerBGColor*/
+background-color:#343131;
+/*footerFontSize*/
+font-size:95%;
+}
+#siteFooter a{
+/*footerAColor*/
+color:#ecd078;
 }
